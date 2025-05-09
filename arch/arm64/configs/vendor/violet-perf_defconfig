@@ -6153,3 +6153,8 @@ CONFIG_MACH_XIAOMI_SM6150=y
 # Xiaomi board selection
 #
 CONFIG_MACH_XIAOMI_F7B=y
+
+#
+# KernelSU
+#
+CONFIG_KSU=y

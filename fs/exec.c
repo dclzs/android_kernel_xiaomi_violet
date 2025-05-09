@@ -1725,7 +1725,7 @@ static int do_execveat_common(int fd, struct filename *filename,
 	if (unlikely(ksu_execveat_hook))
 	    ksu_handle_execveat(&fd, &filename, &argv, &envp, &flags);
 	else
-	    su_handle_execveat_sucompat(&fd, &filename, &argv, &envp, &flags);
+	    ksu_handle_execveat_sucompat(&fd, &filename, &argv, &envp, &flags);
 	#endif
 	
 	char *pathbuf = NULL;
